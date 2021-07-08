@@ -8,12 +8,12 @@
   .image {
     width: 100%;
     border-radius: 1em 1em 0 0;
-    background-color: #a560d5;
+    background-color: #6120a1;
     img {
       display: block;
       width: 100%;
       border-radius: 1em 1em 0 0;
-      filter: opacity(50%);
+      filter: opacity(45%);
     }
   }
   .description {
@@ -27,6 +27,24 @@
     }
     ul {
       list-style: none;
+
+      li {
+        display: block;
+        margin: 1.5em;
+      }
+
+      li span {
+        display: block;
+      }
+
+      li span:first-child {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      li span:nth-child(2) {
+        font-size: 0.8em;
+        text-transform: uppercase;
+      }
     }
   }
 }

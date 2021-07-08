@@ -1,7 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
+import Card from "./component/Card";
+
+import image from "./assets/image-header-mobile.jpg";
 function App() {
   return (
     <div className="App">
@@ -19,6 +22,22 @@ function App() {
           Learn React
         </a>
       </header>
+      <Card
+        imageSrc={image}
+        list={[
+          ["10k+", "companies"],
+          ["314", "templates"],
+          ["12M+", "queries"],
+        ]}
+      >
+        <h2>
+          Get <span>insights</span> that help your business grow.
+        </h2>
+        <p>
+          Discover the benefits of data analytics and make better decisions regarding revenue,
+          customer experience, and overall efficiency.
+        </p>
+      </Card>
     </div>
   );
 }

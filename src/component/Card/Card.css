@@ -1,0 +1,35 @@
+.card {
+  margin: 1em;
+  width: calc(100% - 2em);
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 1em;
+  color: white;
+}
+
+.card .image {
+  width: 100%;
+  border-radius: 1em 1em 0 0;
+  background-color: #a560d5;
+}
+
+.card .image img {
+  display: block;
+  width: 100%;
+  border-radius: 1em 1em 0 0;
+  filter: opacity(50%);
+}
+
+.card .description {
+  background-color: #1c1938;
+  border-radius: 0 0 1em 1em;
+  padding: 1em;
+}
+
+.card .description h2 span {
+  color: #a560d5;
+}
+
+.card .description ul {
+  list-style: none;
+}

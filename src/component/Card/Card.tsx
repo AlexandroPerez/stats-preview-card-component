@@ -1,5 +1,3 @@
-import React from "react";
-import "./Card.css";
 import styles from "./Card.module.scss";
 
 import parser from "./parse-helper";
@@ -38,7 +36,6 @@ export function Card({ imageSrc, title, desc, list }: CardProps) {
   let image = mediaQuery.matches ? imageSrc.desktop : imageSrc.mobile;
   return (
     <div className={styles.card}>
-      {/* <div className={styles.image} style={{ backgroundImage: "url('/assets/image-header-desktop.jpg')" }}> */}
       <div className={styles.image}>
         <img src={image} alt="" />
       </div>
@@ -49,7 +46,7 @@ export function Card({ imageSrc, title, desc, list }: CardProps) {
           {list.map((item, idx) => {
             const [quantity, description] = item;
             return (
-              <li key={quantity}>
+              <li key={`item-${idx}`}>
                 <span>{quantity}</span>
                 <span>{description}</span>
               </li>

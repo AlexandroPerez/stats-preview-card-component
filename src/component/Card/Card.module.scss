@@ -24,11 +24,16 @@ $medium: 880px;
     text-align: center;
     background-color: #1c1938;
     border-radius: 0 0 1em 1em;
-    padding: 1em;
+    padding: 1em 2em;
     h2 {
       span {
         color: #a560d5;
       }
+    }
+    p {
+      font-size: 15px;
+      color: hsla(0, 0%, 100%, 0.75);
+      line-height: 1.7em;
     }
     ul {
       list-style: none;
@@ -54,12 +59,16 @@ $medium: 880px;
       }
 
       li span:first-child {
-        font-size: 1.5em;
-        font-weight: bold;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 0.2em;
       }
       li span:nth-child(2) {
-        font-size: 0.8em;
+        font-size: 0.75em;
         text-transform: uppercase;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-family: "Lexend Deca", sans-serif;
       }
     }
   }

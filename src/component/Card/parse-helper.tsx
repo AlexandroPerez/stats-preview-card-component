@@ -18,7 +18,7 @@ export default function parser(str: string): React.ReactNode {
    * regexp to check if there are any words that match markdown bold pattern
    * tab, linefeed, carriage return, and single "*" characters are ignored.
    */
-  const regexp = /\*{2}([^\t\n\r\u2a]*)\*{2}/g;
+  const regexp = /\*{2}([^\t\n\r*]*)\*{2}/g;
 
   const splitStr = str.split(regexp);
 
